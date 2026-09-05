@@ -1,0 +1,27 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "output": "DP-2",
+    "height": 52,
+    "width": 760,
+    "margin-bottom": 14,
+    "exclusive": false,
+    "spacing": 8,
+
+    "modules-left": ["custom/ws1", "custom/ws2", "custom/ws3", "custom/ws4", "custom/ws5"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/user"],
+
+    "clock": {
+        "interval": 1,
+        "format": "{:%A %H:%M}"
+    },
+
+    "custom/ws1": { "format": "1", "tooltip": false },
+    "custom/ws2": { "format": "2", "tooltip": false },
+    "custom/ws3": { "format": "3", "tooltip": false },
+    "custom/ws4": { "format": "4", "tooltip": false },
+    "custom/ws5": { "format": "5", "tooltip": false },
+
+    "custom/user": { "exec": "echo \"$USER@$(hostname)\"", "interval": "once", "tooltip": false }
+}

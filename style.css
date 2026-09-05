@@ -1,0 +1,33 @@
+* {
+    font-family: "GoMono Nerd Font Mono", "Symbols Nerd Font Mono";
+    font-size: 18px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(74, 46, 13, 0.996);
+    color: #fecc91;
+    border-radius: 0;
+    border: 3px solid #6b4a24;
+    padding: 0 10px;
+}
+
+#clock {
+    padding: 0 16px;
+    color: #fecc91;
+}
+
+#custom-ws1, #custom-ws2, #custom-ws3, #custom-ws4, #custom-ws5 {
+    padding: 0 8px;
+    margin: 6px 3px;
+    color: #fecc91;
+}
+
+#custom-ws1 {
+    margin-left: 14px;
+}
+
+#custom-user {
+    padding: 0 16px;
+    color: #fecc91;
+}
