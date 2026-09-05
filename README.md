@@ -2,7 +2,10 @@
 
 ![preview](preview.svg)
 
-Minimal bottom bar. Workspaces, clock, user@host.
+My custom waybar config aimed to be minimalistic.
+
+## plans
+I plan on adding an indicator for what workspace you are on.
 
 ## install
 
