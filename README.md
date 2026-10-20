@@ -25,7 +25,7 @@ The first one. One bar at the bottom with workspaces, the day and time and user@
 ## install
 
 ```
-git clone https://github.com/epwv/waybar-config
+git clone https://github.com/owainxyz/waybar-config
 cd waybar-config
 ./install.sh
 ```
