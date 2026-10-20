@@ -1,0 +1,4 @@
+{
+    "modules-center": ["dwl/tags"],
+    "dwl/tags": { "num-tags": 5 }
+}

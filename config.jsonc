@@ -1,27 +1,46 @@
-{
-    "layer": "top",
-    "position": "bottom",
-    "output": "DP-2",
-    "height": 52,
-    "width": 760,
-    "margin-bottom": 14,
-    "exclusive": false,
-    "spacing": 8,
+[
+    {
+        "name": "strip",
+        "layer": "overlay",
+        "position": "top",
+        "exclusive": false,
+        "passthrough": true,
+        "height": 0,
+        "spacing": 0,
+        "margin": 0,
 
-    "modules-left": ["custom/ws1", "custom/ws2", "custom/ws3", "custom/ws4", "custom/ws5"],
-    "modules-center": ["clock"],
-    "modules-right": ["custom/user"],
+        "modules-left": [],
+        "modules-center": ["custom/mem", "clock", "cpu"],
+        "modules-right": [],
 
-    "clock": {
-        "interval": 1,
-        "format": "{:%A %H:%M}"
+        "custom/mem": {
+            "exec": "~/.config/waybar/scripts/mem.sh",
+            "interval": 2,
+            "min-length": 13,
+            "tooltip": false
+        },
+        "clock": {
+            "interval": 1,
+            "format": "time: {:%H:%M}",
+            "tooltip": false
+        },
+        "cpu": {
+            "interval": 2,
+            "format": "cpu: {usage}%",
+            "min-length": 9,
+            "tooltip": false
+        }
     },
-
-    "custom/ws1": { "format": "1", "tooltip": false },
-    "custom/ws2": { "format": "2", "tooltip": false },
-    "custom/ws3": { "format": "3", "tooltip": false },
-    "custom/ws4": { "format": "4", "tooltip": false },
-    "custom/ws5": { "format": "5", "tooltip": false },
-
-    "custom/user": { "exec": "echo \"$USER@$(hostname)\"", "interval": "once", "tooltip": false }
-}
+    {
+        "name": "tags",
+        "layer": "overlay",
+        "position": "left",
+        "exclusive": false,
+        "width": 0,
+        "spacing": 0,
+        "margin": 0,
+        "modules-left": [],
+        "modules-right": [],
+        "include": ["~/.config/waybar/workspaces.jsonc"]
+    }
+]

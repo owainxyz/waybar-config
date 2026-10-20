@@ -1,0 +1,4 @@
+{
+    "modules-center": ["hyprland/workspaces"],
+    "hyprland/workspaces": { "format": "{id}", "persistent-workspaces": { "*": 5 } }
+}

@@ -1,0 +1,4 @@
+{
+    "modules-center": ["ext/workspaces"],
+    "ext/workspaces": { "format": "{name}", "sort-by-id": true }
+}

@@ -1,0 +1,4 @@
+{
+    "modules-center": ["niri/workspaces"],
+    "niri/workspaces": { "format": "{index}" }
+}

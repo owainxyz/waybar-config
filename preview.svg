@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="52" viewBox="0 0 760 52" font-family="monospace">
-  <rect x="1.5" y="1.5" width="757" height="49" rx="0" fill="#4a2e0d" stroke="#6b4a24" stroke-width="3"/>
-  <text x="24" y="32" fill="#fecc91" font-size="18">1  2  3  4  5</text>
-  <text x="380" y="32" fill="#fecc91" font-size="18" text-anchor="middle">Saturday 14:32</text>
-  <text x="736" y="32" fill="#fecc91" font-size="18" text-anchor="end">owain@nixos</text>
-</svg>

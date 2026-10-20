@@ -1,0 +1,4 @@
+{
+    "modules-center": ["river/tags"],
+    "river/tags": { "num-tags": 5 }
+}

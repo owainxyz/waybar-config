@@ -1,33 +1,54 @@
 * {
-    font-family: "GoMono Nerd Font Mono", "Symbols Nerd Font Mono";
-    font-size: 18px;
+    font-family: "GoMono Nerd Font Mono", "Go Mono", monospace;
+    font-size: 20px;
     min-height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 window#waybar {
-    background-color: rgba(74, 46, 13, 0.996);
-    color: #fecc91;
-    border-radius: 0;
-    border: 3px solid #6b4a24;
+    background: transparent;
+    color: #d4d4d4;
+}
+
+window#waybar.strip .modules-center {
+    background: #161616;
+    border: 1px solid #3a3a3a;
+    border-top: none;
+    padding: 3px;
+}
+
+window#waybar.tags .modules-center {
+    background: #161616;
+    border: 1px solid #3a3a3a;
+    border-left: none;
+    padding: 6px 3px;
+}
+
+#custom-mem, #clock, #cpu {
     padding: 0 10px;
 }
 
-#clock {
-    padding: 0 16px;
-    color: #fecc91;
+#workspaces button, #tags button {
+    padding: 6px 12px;
+    color: #6a6a6a;
+    background: transparent;
 }
 
-#custom-ws1, #custom-ws2, #custom-ws3, #custom-ws4, #custom-ws5 {
-    padding: 0 8px;
-    margin: 6px 3px;
-    color: #fecc91;
+#workspaces button.active, #workspaces button.focused,
+#tags button.focused, #tags button.occupied.focused {
+    color: #d4d4d4;
 }
 
-#custom-ws1 {
-    margin-left: 14px;
+#workspaces button.urgent, #tags button.urgent {
+    color: #161616;
+    background: #d4d4d4;
 }
 
-#custom-user {
-    padding: 0 16px;
-    color: #fecc91;
+#workspaces button:hover, #tags button:hover {
+    color: #d4d4d4;
+    background: transparent;
 }
